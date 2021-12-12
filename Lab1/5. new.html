@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="width: auto; margin: 10px; border-style: solid; border-width: 4px; border-color: blue">
+    <form style="margin: 30px;" action="">
+    <h2>Reservation Request</h2>
+	<form>
+		<fieldset>
+			<legend><b style="color:blue">General Information</b></legend>
+			<table>
+				<tr>
+					<td>Arrival Time: </td>
+					<td>
+						<input type="date" name="arrivalTime" required="true" />
+					</td>
+				</tr>
+				<tr>
+					<td>Nights: </td>
+					<td>
+						<input type="number" name="nights" required="ture" />
+					</td>
+				</tr>
+				<tr>
+					<td>Adults: </td>
+					<td>
+						<select name="adultPersons">
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Childrens: </td>
+					<td>
+						<select name="numChildren">
+							<option value="0">0</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+						</select>
+					</td>
+				</tr>
+			</table>	
+		</fieldset><br>
+		
+		<fieldset>
+			<legend><b style="color:blue">Preferences</b></legend>
+			<table>
+				<tr>
+					<td>Room Type: </td>
+					<td>
+						<input type="radio" name="roomType" value="standard" checked />Standard
+						<input type="radio" name="roomType" value="business" />Business
+						<input type="radio" name="roomType" value="suite" />Suite
+					</td>
+				</tr>
+				<tr>
+					<td>Bed Type: </td>
+					<td>
+						<input type="radio" name="bedType" value="king" checked />King
+						<input type="radio" name="bedType" value="double_2" />Double Double
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="allowSmoke" value="smokeTrue" />Smoking</td>
+				</tr>
+			</table>
+		</fieldset><br>
+
+		<fieldset>
+			<legend><b style="color:blue">Contact Information</b></legend>
+			<table>
+				<tr>
+					<td>Name: </td>
+					<td><input type="text" name="UserName" required /></td>
+				</tr>
+				<tr>
+					<td>Email: </td>
+					<td><input type="email" name="UserEmail" required /> </td>
+				</tr>
+				<tr>
+					<td>Phone: </td>
+					<td><input type="tel" pattern="((\+[0-9]{2}|)( |-|)[0-9]{5}( |-|)[0-9]{3}( |-|)[0-9]{3})" name="userPhone" required /></td>
+				</tr>
+			
+			</table>
+		
+		</fieldset>
+		<br />
+		<input type="submit" value="Submit Reservation" />
+		<input type="reset" value="Clear" />
+	</form>
+    </form>
+</body>
+</html>
